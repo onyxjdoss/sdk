@@ -1,0 +1,12 @@
+<div>
+    <div>
+        <ul class="nav nav-pills nav-stacked">
+        {{#each item in model}}
+        <li>{{item.title}}</li>
+        {{/each}}
+        </ul>
+    </div>
+    <div>
+        {{outlet}}
+    </div>
+</div>
