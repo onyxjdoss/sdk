@@ -1,8 +1,7 @@
-{@layout path="heat" theme="blue" /}
+{@layout path="heat" theme="red" /}
 
 {<content}
 
-{@queryOne type="guide:city" field="_doc" fieldValue="{request.qs.id}" as="city"}
 <section id="page">
     <header class="page-header mb30">
         <div class="container">
@@ -25,7 +24,6 @@
     <!--end page content-->
 
 </section>
-{/queryOne}
 
 {/content}
 
