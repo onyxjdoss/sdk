@@ -1,0 +1,40 @@
+{@layout path="city" theme="blue" /}
+
+{<content}
+
+{@queryOne type="guide:city" field="_doc" fieldValue="{request.qs.id}" as="city"}
+<section id="page">
+    <header class="page-header mb30">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>
+                        Map
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="content" class="mt30 pb30">
+        <div class="container">
+            <div class="row">
+			    <iframe
+			      width="600"
+			      height="450"
+			      frameborder="0" style="border:0"
+			      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAkda8MlX3SWhTuT6r6rACUvzYgaYJmdfk
+			        &amp;q=Butchart+Gardens+Victoria+BC
+			        &amp;attribution_source=Google+Maps+Embed+API
+			        &amp;attribution_web_url=http://www.butchartgardens.com/
+			        &amp;attribution_ios_deep_link_id=comgooglemaps://?daddr=Butchart+Gardens+Victoria+BC">
+			    </iframe>
+            </div>
+        </div>
+    </section>
+    <!--end page content-->
+
+</section>
+{/queryOne}
+
+{/content}
+
