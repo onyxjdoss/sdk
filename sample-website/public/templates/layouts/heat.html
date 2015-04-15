@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    {+head}
+        {@block path="head/default"/}
+    {/head}
+    {+title}
+        <title>City Template</title>
+    {/title}
+</head>
+<body>
+	<div id="globalWrapper" class="guide city">
+
+        {+header}
+            {@block path="header/default"/}
+        {/header}
+
+        {+content}
+            <!-- PAGE CONTENT -->
+        {/content}
+
+        {+footer}
+            {@block path="footer/default"/}
+        {/footer}
+
+    </div>
+
+    {+script}
+        {@block path="script/default"/}
+    {/script}
+
+</body>
+</html>

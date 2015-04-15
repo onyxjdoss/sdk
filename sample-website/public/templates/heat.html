@@ -1,4 +1,4 @@
-{@layout path="city" theme="blue" /}
+{@layout path="heat" theme="blue" /}
 
 {<content}
 
@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h1>
-                        Map
+                        Heat Index
                     </h1>
                 </div>
             </div>
@@ -18,9 +18,7 @@
     <section id="content" class="mt30 pb30">
         <div class="container">
             <div class="row">
-				<script type="text/javascript" defer="defer">
-					$.getJSON('http://api.wunderground.com/api/d8ed4bf9d8f1b19b/conditions/q/GA/Brunswick.json')
-				</script>
+				<div id="output"></div>
             </div>
         </div>
     </section>
