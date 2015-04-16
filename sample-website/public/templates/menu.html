@@ -1,0 +1,61 @@
+{@layout path="product" theme="blue" /}
+{<template1}
+	<div class="row">
+		<span style="font-weight: bold">{content.title}</span>
+	</div>
+{/template1}
+
+{<content}
+
+<section id="page">
+    <header class="page-header mb30">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>
+                        Today's Menu
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="content" class="mt30 pb30">
+		<h2>Breakfast (served 0600-0800)</h2>
+		{@query type="custom:food0" sort="order" field="meal" fieldValue="Breakfast"}
+        <div class="container">
+			{#rows}
+            <div class="row">
+				<span style="font-weight: bold">{title}</span>
+            </div>
+			{/rows}
+        </div>
+		{/query}
+
+		<h2>Lunch (served 1100-1400)</h2>
+		{@query type="custom:food0" sort="order" field="meal" fieldValue="Lunch"}
+        <div class="container">
+			{#rows}
+            <div class="row">
+				<span style="font-weight: bold">{title}</span>
+            </div>
+			{/rows}
+        </div>
+		{/query}
+
+		<h2>Dinner (served 1800-2000)</h2>
+		{@query type="custom:food0" sort="order" field="meal" fieldValue="Dinner"}
+        <div class="container">
+			{#rows}
+            <div class="row">
+				<span style="font-weight: bold">{title}</span>
+            </div>
+			{/rows}
+        </div>
+		{/query}
+    </section>
+    <!--end page content-->
+
+</section>
+
+{/content}
+
